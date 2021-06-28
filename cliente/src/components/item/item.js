@@ -49,7 +49,24 @@ const Item = () => {
                             <span className={styles.cents}>{itemByIdResult.item.price.decimals}</span>
 						</span>
 
-						<button className={styles.comprarButton}>Comprar</button>
+						
+						{itemByIdResult.item.free_shipping ? (
+							<span className={styles.freeShipping}>
+								<img
+								src='../../images/ic_shipping.png'
+								alt='Free shipping symbol'
+								className={styles.freeShippingLogo}
+								/>
+
+								<span>Envío Gratis</span>
+							</span>	
+						) : null }		
+						
+
+						<form>
+							<button className={styles.comprarButton}>Comprar</button>		
+						</form>			
+						
 					</div>
 				</div>
 

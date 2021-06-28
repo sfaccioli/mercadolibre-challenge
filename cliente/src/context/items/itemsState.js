@@ -9,7 +9,7 @@ import clienteAxios from '../../config/axios';
 const ItemsState = props => {
 
     const initialState = {
-        itemsResult: {},
+        itemsResult: JSON.parse(localStorage.getItem('searchedItems')),
         itemByIdResult: null,
         categories: []
     }
@@ -20,7 +20,6 @@ const ItemsState = props => {
         try {
             const result = await clienteAxios.get('/items', { params: { q: searchInput }});
 
-            console.log(result.data);
             dispatch({
                 type:GET_ITEMS,
                 payload:result.data
@@ -37,13 +36,12 @@ const ItemsState = props => {
 
            const categories = await clienteAxios.get(`/items/categories/${item.data.item.category}`);
 
-            console.log(item.data);
             dispatch({
                 type:GET_ITEM_ID,
                 payload:item.data
             });
 
-            console.log(categories.data);
+
             dispatch({
                 type:GET_CATEGORIES,
                 payload:categories.data

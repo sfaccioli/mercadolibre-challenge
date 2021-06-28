@@ -34,7 +34,6 @@ exports.getItem = async (req, resp) => {
 			lastName: 'Faccioli',
 		}
 	};
-   // MLA916188006
 	try {
 		const item = await fetch(`https://api.mercadolibre.com/items/${req.params.id}`)
 			.then((res) => res.json());
