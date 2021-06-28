@@ -1,0 +1,60 @@
+.container {
+	width: 100%;
+	padding: 0px;
+	background-color: #ffe600;
+	min-height: 70px;
+	line-height: 70px;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	div {
+		width: 100%;
+	}
+
+	.searchForm {
+		display: flex;
+		margin-left: 150px;
+		margin-right: 150px;
+
+        .logoMl {
+            width: 60px;
+            height: 40px;
+            margin-right: 25px;
+        }
+
+		.searchInput {
+			width: 100%;
+			padding: 7px 60px 9px 15px;
+			border: none;
+			border-radius: 4px 0px 0px 4px;
+			color: #333333;
+			font-size: 18px;
+
+			&::placeholder {
+				color: #999999;
+			}
+
+			&:focus {
+				outline: none;
+				border: none;
+			}
+		}
+
+		button {
+			height: 40px;
+			width: 44px;
+			border: none;
+			border-radius: 0px 4px 4px 0px;
+		}
+
+		.searchIcon {
+			height: 22px;
+			padding-top: 2px;
+			cursor: pointer;
+		}
+	}
+}

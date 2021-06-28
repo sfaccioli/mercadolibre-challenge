@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+    .box {
+        padding-left: 150px;
+        padding-right: 150px;
+        background-color: #EEEEEE;
+    }
+
+}
+

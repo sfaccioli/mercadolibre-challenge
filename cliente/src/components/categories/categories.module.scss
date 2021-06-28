@@ -1,0 +1,26 @@
+.categories {
+	padding-top: 16px;
+	padding-bottom: 16px;
+    padding-left: 0px;
+    margin: 0;
+
+	.category {
+        list-style: none;
+        display: inline;
+		font-size: 14px;
+		color: #666666;
+
+		.symbol {
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+
+		&:last-child {
+			font-weight: bold;
+
+			.symbol {
+				display: none;
+			}
+		}
+	}
+}

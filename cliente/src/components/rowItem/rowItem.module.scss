@@ -1,0 +1,43 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	padding: 0px 50px 20px 0;
+	position: relative;
+	background-color: white;
+    border-bottom: 3px #999999;
+
+	.image {
+		height: 180px;
+		width: 180px;
+		object-fit: contain;
+		margin: 16px;
+		border-radius: 4px;
+	}
+
+	.itemInfo {
+		display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+		.price {
+            font-size: 24px;
+            margin-bottom: 24px;
+
+			.priceSymbol {
+				margin-right: 5px;
+			}
+
+
+            .freeShipping {
+                margin-left: 10px;
+            }
+		}
+
+        
+
+        .title {
+            font-size: 18px;
+        }
+	}
+}

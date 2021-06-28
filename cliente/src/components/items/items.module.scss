@@ -1,0 +1,15 @@
+
+.products {
+    padding: 0px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+	
+
+    .product {
+        list-style: none;
+        flex-grow: 1;
+        border-bottom: thin solid #EEEEEE;
+    }
+}
