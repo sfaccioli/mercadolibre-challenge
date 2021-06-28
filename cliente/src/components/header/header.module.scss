@@ -20,11 +20,11 @@
 		margin-left: 150px;
 		margin-right: 150px;
 
-        .logoMl {
-            width: 60px;
-            height: 40px;
-            margin-right: 25px;
-        }
+		.logoMl {
+			width: 60px;
+			height: 40px;
+			margin-right: 25px;
+		}
 
 		.searchInput {
 			width: 100%;
@@ -55,6 +55,28 @@
 			height: 22px;
 			padding-top: 2px;
 			cursor: pointer;
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.container {
+
+
+		.searchForm {
+			margin-left: 70px;
+			margin-right: 70px;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.container {
+
+
+		.searchForm {
+			margin-left: 10px;
+			margin-right: 15px;
 		}
 	}
 }

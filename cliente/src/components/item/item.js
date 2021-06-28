@@ -23,7 +23,7 @@ const Item = () => {
 
 			<div className={styles.container}>
 				<div className={styles.upperWrapper}>
-					<div className={styles.image}>
+					<div className={styles.imageContainer}>
 						<img
 							src={itemByIdResult.item.picture}
 							alt='Product'
@@ -46,6 +46,7 @@ const Item = () => {
 									itemByIdResult.item.price.amount
 								)}
 							</span>
+                            <span className={styles.cents}>{itemByIdResult.item.price.decimals}</span>
 						</span>
 
 						<button className={styles.comprarButton}>Comprar</button>

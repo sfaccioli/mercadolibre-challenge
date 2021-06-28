@@ -8,8 +8,8 @@ exports.mapItems = items => {
             title: item.title,
             price: {
                 currency: item.currency_id,
-                amount: item.price,
-                decimals: item.price - parseInt(item.price)
+                amount: parseInt(item.price),
+                decimals: item.price.toFixed(2).toString().split('.')[1]
             },
             picture: item.thumbnail,
             condition: condition.value_name,
@@ -34,8 +34,8 @@ exports.mapItemById = (item, description) => {
         title: item.title,
         price: {
             currency: item.currency_id,
-            amount: item.price,
-            decimals: item.price - parseInt(item.price)
+            amount: parseInt(item.price),
+            decimals: item.price.toFixed(2).toString().split('.')[1]
         },
         picture: item.pictures[0].secure_url,
         condition: condition.value_name,

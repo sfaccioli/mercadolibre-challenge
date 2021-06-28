@@ -12,3 +12,28 @@
 
 }
 
+
+@media (max-width: 750px) { 
+    .container{
+        
+    
+        .box {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+    
+    }
+}
+
+@media (max-width: 450px) { 
+    .container{
+        
+    
+        .box {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    
+    }
+}
+
